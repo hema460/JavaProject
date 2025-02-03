@@ -38,12 +38,13 @@ public class SubmitOrderStepDef  extends BaseTest{
 
 	@Before
 	public void setUp() throws IOException {
-		//just adding this to see if jenkin run the job automatically
+		//is web hook is going to make any change to run the automatic job
 		intializeDriver();
 		landingPage=new LandingPage();
 	}
 	@After(order=0)
 	public void tearDown() {
+		//we are quitting the browser
 		driver.quit();
 	}
 	
