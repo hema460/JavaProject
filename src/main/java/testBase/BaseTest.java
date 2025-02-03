@@ -25,8 +25,7 @@ public class BaseTest {
 		prop.load(fis);
 	}
 
-
-     
+ 
 	public static void intializeDriver()  {
 		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser"): prop.getProperty("browser");
 
