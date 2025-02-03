@@ -6,6 +6,8 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -29,10 +31,20 @@ public class JunitSubmitOrderStepDef  extends BaseTest{
 	CheckOutPage checkOutPage;
 	ConfirmationPage confirmationPage;
 	OrdersPage ordersPage;
+	
+	@Before
+	public void setUp() throws IOException {
+		intializeDriver();
+		landingPage=new LandingPage();
+	}
+	@After(order=0)
+	public void tearDown() {
+		driver.quit();
+	}
 
 	@Given ("^I launch the browser and navigate to url$")
 	public void I_lanch_browser_and_navigate_to_url() throws IOException {
-		landingPage = launchApplication();
+		//landingPage = launchApplication();
 
 	}
 	@Given("^I logged in with username (.+) and password (.+)$")
@@ -66,7 +78,7 @@ public class JunitSubmitOrderStepDef  extends BaseTest{
 		String confirmationMsg=confirmationPage.getConfirmationMessage();
 		System.out.println(confirmationMsg);
 		//Assert.assertEquals(confirmationMsg,string);
-		tearDown();
+		//tearDown();
 	}
 
 	//@2nd scenario
@@ -86,7 +98,7 @@ public class JunitSubmitOrderStepDef  extends BaseTest{
 		boolean msg=ordersPage.deleteMsg();
 		System.out.println(msg);
 		//Assert.assertTrue(msg);
-		tearDown();
+		//tearDown();
 	}
 
 }

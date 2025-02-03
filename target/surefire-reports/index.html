@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="myTestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User is able to delete the product&quot;, &quot;Purchase the order from Ecommerce website&quot;)">runScenario("User is able to delete the product", "Purchase the order from Ecommerce website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="myTestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;positive test of submitting the order&quot;, &quot;Purchase the order from Ecommerce website&quot;)">runScenario("positive test of submitting the order", "Purchase the order from Ecommerce website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="myTestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User is able to delete the product&quot;, &quot;Purchase the order from Ecommerce website&quot;)">runScenario("User is able to delete the product", "Purchase the order from Ecommerce website")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,29 +123,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">myTestRunner.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User is able to delete the product&quot;, &quot;Purchase the order from Ecommerce website&quot;)">
-                  </a> <!-- runScenario("User is able to delete the product", "Purchase the order from Ecommerce website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is able to delete the product","Purchase the order from Ecommerce website")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at stepDefinitions.SubmitOrderStepDef.verify_confirmationmsg(SubmitOrderStepDef.java:105)
-	at ✽.verify the confirmation message order deleted succefully is diplayed(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:21)
-... Removed 4 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -167,6 +135,16 @@
                   </a> <!-- runScenario("positive test of submitting the order", "Purchase the order from Ecommerce website") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("positive test of submitting the order","Purchase the order from Ecommerce website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User is able to delete the product&quot;, &quot;Purchase the order from Ecommerce website&quot;)">
+                  </a> <!-- runScenario("User is able to delete the product", "Purchase the order from Ecommerce website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User is able to delete the product","Purchase the order from Ecommerce website")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -237,11 +215,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'myTestRunner.TestRunner')
-data.setCell(0, 3, 39123);
+data.setCell(0, 3, 37982);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'myTestRunner.TestRunner')
-data.setCell(1, 3, 37299);
+data.setCell(1, 3, 33605);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -274,22 +252,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">myTestRunner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@587a1cfb)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@7cea0110)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("positive test of submitting the order", "Purchase the order from Ecommerce website")</span>
-                <span class="method-start">1068 ms</span>
+                <span class="method-start">983 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("User is able to delete the product", "Purchase the order from Ecommerce website")</span>
-                <span class="method-start">38380 ms</span>
+                <span class="method-start">38982 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">77529 ms</span>
+                <span class="method-start">72598 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

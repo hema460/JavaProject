@@ -21,13 +21,13 @@ public class OrdersPage extends BaseTest{
 	@FindBy (xpath="//td/button[text()='Delete']") List<WebElement> delete;
 	@FindBy (id="toast-container") WebElement verifyDeleteMsg;
 	public void clickOnDeleteBtn() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		WebElement del=delete.stream().filter(f->f.getText().equals("Delete")).findFirst().orElse(null);
 		del.click();
 	}
 	
 	public boolean deleteMsg() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		boolean status=false;
 		if(delete.size()>0) {
 			status=false;
