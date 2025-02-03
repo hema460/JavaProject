@@ -38,6 +38,7 @@ public class SubmitOrderStepDef  extends BaseTest{
 
 	@Before
 	public void setUp() throws IOException {
+		//just adding this to see if jenkin run the job automatically
 		intializeDriver();
 		landingPage=new LandingPage();
 	}
