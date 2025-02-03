@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-31T14:41:48 CST" name="Default suite" finished-at="2025-01-31T14:42:55 CST" duration-ms="67417">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@dd05255]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-01-31T14:41:48 CST" name="Default test" finished-at="2025-01-31T14:42:55 CST" duration-ms="67417">
+      <class name="myTestRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-01-31T14:41:48 CST" name="setUpClass" finished-at="2025-01-31T14:41:49 CST" duration-ms="1128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4ee5b2d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-01-31T14:41:49 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-31T14:42:17 CST" duration-ms="28345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["positive test of submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-01-31T14:42:18 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-31T14:42:55 CST" duration-ms="37791" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is able to delete the product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertFalse(Assert.java:67)
+at org.testng.Assert.assertFalse(Assert.java:77)
+at stepDefinitions.SubmitOrderStepDef.verify_confirmationmsg(SubmitOrderStepDef.java:105)
+at ✽.verify the confirmation message order deleted succefully is diplayed(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-01-31T14:42:55 CST" name="tearDownClass" finished-at="2025-01-31T14:42:55 CST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- myTestRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
