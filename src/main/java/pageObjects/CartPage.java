@@ -31,14 +31,16 @@ public class CartPage  extends BaseTest{
 	
 
 	
-	public Boolean verifyProductDisplay(String productName) {
-		waitForElementToAppear(cartProductsBy );
+	public Boolean verifyProductDisplay(String productName) throws InterruptedException {
+		//waitForElementToAppear(cartProductsBy );
+		Thread.sleep(3000);	
 		boolean status=cartProducts.stream().anyMatch(f->f.getText().equals(productName));
 		return status;
 	}
 
-	public CheckOutPage clickCheckOut() throws IOException {
-		waitForElementToAppear(checkOutBy );
+	public CheckOutPage clickCheckOut() throws IOException, InterruptedException {
+	//	waitForElementToAppear(checkOutBy );
+		Thread.sleep(3000);
 		checkOut.click();
 		return new CheckOutPage();
 	}

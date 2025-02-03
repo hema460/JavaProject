@@ -52,8 +52,9 @@ public class ProductCatalogPage extends BaseTest{
 		getProductByName(productName).findElement(addToCartBy).click();
 	}
 
-	public Boolean isProductAddedToCart() {
-		waitForElementToAppear(toastMessage );
+	public Boolean isProductAddedToCart() throws InterruptedException {
+	//	waitForElementToAppear(toastMessage );
+		Thread.sleep(3000);
 		boolean status= productAddedToCart.isDisplayed();
 		return status;
 	}
