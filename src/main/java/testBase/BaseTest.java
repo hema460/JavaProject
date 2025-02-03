@@ -56,7 +56,7 @@ public class BaseTest {
 
 	
 
-	@BeforeMethod
+/*	@BeforeMethod
 	public LandingPage launchApplication() throws IOException {
 		intializeDriver();
 		LandingPage landingPage=new LandingPage();
@@ -65,6 +65,6 @@ public class BaseTest {
 	@AfterMethod
 	public void tearDown() {
 		driver.close();
-	}
+	}*/
 	
 }
