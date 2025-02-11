@@ -47,6 +47,7 @@ public class ProductCatalogPage extends BaseTest{
 	}
 
 	public void clickaddProductToCart(String productName) throws InterruptedException  {
+		Thread.sleep(3000);
 		getProductByName(productName).findElement(addToCartBy).click();
 	}
 
