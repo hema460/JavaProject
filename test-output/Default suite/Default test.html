@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 03 00:12:21 CST 2025</td>
+<td>Started on:</td><td>Mon Feb 10 23:41:25 CST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48773 ms)</td>
+<tr><td>Total time:</td><td>52 seconds (52973 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,35 +78,29 @@ function toggleAllBoxes() {
 <td title='myTestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: myTestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to delete the product", "Purchase the order from Ecommerce website"</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;del&quot; is null
 	at pageObjects.OrdersPage.clickOnDeleteBtn(OrdersPage.java:26)
-	at stepDefinitions.SubmitOrderStepDef.click_delete_btn(SubmitOrderStepDef.java:93)
+	at stepDefinitions.SubmitOrderStepDef.click_delete_btn(SubmitOrderStepDef.java:97)
 	at ✽.click on the delete button(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:20)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1641565704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1641565704'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;del&quot; is null
+</pre></div><a href='#' onClick='toggleBox("stack-trace1920098017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1920098017'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;del&quot; is null
 	at pageObjects.OrdersPage.clickOnDeleteBtn(OrdersPage.java:26)
-	at stepDefinitions.SubmitOrderStepDef.click_delete_btn(SubmitOrderStepDef.java:93)
+	at stepDefinitions.SubmitOrderStepDef.click_delete_btn(SubmitOrderStepDef.java:97)
 	at ✽.click on the delete button(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:20)
 </pre></div></td>
 <td>29</td>
 <td>myTestRunner.TestRunner@dd05255</td></tr>
 <tr>
 <td title='myTestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: myTestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "positive test of submitting the order", "Purchase the order from Ecommerce website"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at stepDefinitions.SubmitOrderStepDef.I_add_procut_to_cart(SubmitOrderStepDef.java:65)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;pageObjects.ProductCatalogPage.getProductByName(String)&quot; is null
+	at pageObjects.ProductCatalogPage.clickaddProductToCart(ProductCatalogPage.java:51)
+	at stepDefinitions.SubmitOrderStepDef.I_add_procut_to_cart(SubmitOrderStepDef.java:67)
 	at ✽.I add the product BANARSI SAREE to cart(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1566269351", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1566269351'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at stepDefinitions.SubmitOrderStepDef.I_add_procut_to_cart(SubmitOrderStepDef.java:65)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1935689965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1935689965'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;pageObjects.ProductCatalogPage.getProductByName(String)&quot; is null
+	at pageObjects.ProductCatalogPage.clickaddProductToCart(ProductCatalogPage.java:51)
+	at stepDefinitions.SubmitOrderStepDef.I_add_procut_to_cart(SubmitOrderStepDef.java:67)
 	at ✽.I add the product BANARSI SAREE to cart(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:8)
 </pre></div></td>
-<td>17</td>
+<td>22</td>
 <td>myTestRunner.TestRunner@dd05255</td></tr>
 </table><p>
 </body>

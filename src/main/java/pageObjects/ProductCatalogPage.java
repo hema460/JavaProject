@@ -37,11 +37,12 @@ public class ProductCatalogPage extends BaseTest{
     
 	public List<WebElement> getProductList() throws InterruptedException  {
 	//	waitForElementPresence(productsBy );
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		return products;
 	}
 
 	public WebElement getProductByName(String productName) throws InterruptedException  {
+		Thread.sleep(3000);
 		WebElement prod = getProductList().stream().filter(f->f.findElement(By.tagName("b")).getText().equals(productName)).findFirst().orElse(null);
 		return prod;
 	}

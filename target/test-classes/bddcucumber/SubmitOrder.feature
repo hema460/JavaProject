@@ -11,7 +11,7 @@ Background:
 
     Examples: 
       | username               | password     | productName   |
-      | hemajayworld@gmail.com | Practice@123 | BANARSI SAREE |
+      | hemajayworld@gmail.com | Practice@123 | ZARA COAT 3 |
 
 
   Scenario Outline: User is able to delete the product

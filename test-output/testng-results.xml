@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-03T00:17:25 CST" name="Suite" finished-at="2025-02-03T00:18:38 CST" duration-ms="72324">
+  <suite started-at="2025-02-10T23:45:54 CST" name="Suite" finished-at="2025-02-10T23:47:17 CST" duration-ms="82877">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@dd05255]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-03T00:17:25 CST" name="Test" finished-at="2025-02-03T00:18:38 CST" duration-ms="72324">
+    <test started-at="2025-02-10T23:45:54 CST" name="Test" finished-at="2025-02-10T23:47:17 CST" duration-ms="82877">
       <class name="myTestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-02-03T00:17:25 CST" name="setUpClass" finished-at="2025-02-03T00:17:26 CST" duration-ms="995" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-02-10T23:45:54 CST" name="setUpClass" finished-at="2025-02-10T23:45:55 CST" duration-ms="1002" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@64fe9da7]]>
+                <![CDATA[org.testng.TestRunner@1cec219f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-02-03T00:17:26 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-03T00:18:04 CST" duration-ms="38004" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-02-10T23:45:55 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T23:46:42 CST" duration-ms="47057" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-02-03T00:18:04 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-03T00:18:38 CST" duration-ms="33151" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-02-10T23:46:42 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T23:47:17 CST" duration-ms="34703" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,25 +50,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertFalse(Assert.java:67)
-at org.testng.Assert.assertFalse(Assert.java:77)
-at stepDefinitions.SubmitOrderStepDef.verify_confirmationmsg(SubmitOrderStepDef.java:100)
-at ✽.verify the confirmation message order deleted succefully is diplayed(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:21)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-02-03T00:18:38 CST" name="tearDownClass" finished-at="2025-02-03T00:18:38 CST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myTestRunner.TestRunner@dd05255]" started-at="2025-02-10T23:47:17 CST" name="tearDownClass" finished-at="2025-02-10T23:47:17 CST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
