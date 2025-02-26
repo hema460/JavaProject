@@ -24,7 +24,8 @@ public class ConfirmationPage  extends BaseTest{
 	
 	@FindBy(xpath=" //h1[text()=' Thankyou for the order. ']") WebElement confirmationMessage;
 
-	public String getConfirmationMessage() {
+	public String getConfirmationMessage() throws InterruptedException {
+		Thread.sleep(3000);
 		String message=confirmationMessage.getText();
 		return message;
 	}

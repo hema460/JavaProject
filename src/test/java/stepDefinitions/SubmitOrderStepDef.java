@@ -1,15 +1,18 @@
 package stepDefinitions;
 
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
@@ -66,6 +69,7 @@ public class SubmitOrderStepDef  extends BaseTest{
 		List<WebElement> product=pcp.getProductList();	
 		pcp.clickaddProductToCart(productName);
 		Boolean status = pcp.isProductAddedToCart();
+		System.out.println("status is"+status);
 	//	Assert.assertTrue(status);
 		cp = pcp.clickCart();
 	}
@@ -81,9 +85,9 @@ public class SubmitOrderStepDef  extends BaseTest{
 
 	}
 	@Then ("verify the confirmation message {string} is diplayed")
-	public void verrify_cinfirmation_message(String string) {
+	public void verrify_cinfirmation_message(String string) throws InterruptedException {
 		String confirmationMsg=confirmationPage.getConfirmationMessage();
-		System.out.println(confirmationMsg);
+		System.out.println("message is "+confirmationMsg);
 	Assert.assertEquals(confirmationMsg,string);
 		
 	}
@@ -114,8 +118,32 @@ public class SubmitOrderStepDef  extends BaseTest{
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		byte[] source=ts.getScreenshotAs(OutputType.BYTES);
+	// this failed image wil be present along with cucumber.html under target folder.
+		scenario.attach(source, "image/png", screenShots);
 	
-		scenario.attach(source, "image/png", screenShots);}
+		
+		/*
+		//if you want to attach the screen in customer provided path under project folder then use the below code.
+		String customFolderPath = "./custom_screenshots/";  // You can change this to any folder name you want
+		    File screenshotFolder = new File(customFolderPath);
+		    
+		    // Create the folder if it doesn't exist
+		    if (!screenshotFolder.exists()) {
+		        screenshotFolder.mkdirs();  // Create the folder if it doesn't exist
+		    }
+		    
+		    // Save the screenshot to the custom folder
+		    File screenshotFile = new File(customFolderPath + screenShots + ".png");
+		    try {
+		        // Write the screenshot bytes to the custom folder
+		        FileUtils.writeByteArrayToFile(screenshotFile, source);
+		    } catch (IOException e) {
+		        e.printStackTrace();
+		    }
+
+		    // Attach the screenshot to the scenario report
+		    scenario.attach(source, "image/png", screenShots);*/
+		}
 	}
 	
 }

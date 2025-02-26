@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-10T22:59:37 CST" name="Surefire suite" finished-at="2025-02-10T23:00:27 CST" duration-ms="49652">
+  <suite started-at="2025-02-25T13:48:40 CST" name="Surefire suite" finished-at="2025-02-25T13:50:05 CST" duration-ms="84620">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@293a5bf6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@20ce78ec]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-10T22:59:37 CST" name="Surefire test" finished-at="2025-02-10T23:00:27 CST" duration-ms="49652">
+    <test started-at="2025-02-25T13:48:40 CST" name="Surefire test" finished-at="2025-02-25T13:50:05 CST" duration-ms="84620">
       <class name="myTestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myTestRunner.TestRunner@293a5bf6]" started-at="2025-02-10T22:59:37 CST" name="setUpClass" finished-at="2025-02-10T22:59:38 CST" duration-ms="934" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myTestRunner.TestRunner@20ce78ec]" started-at="2025-02-25T13:48:40 CST" name="setUpClass" finished-at="2025-02-25T13:48:41 CST" duration-ms="479" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2d0ecb24]]>
+                <![CDATA[org.testng.TestRunner@23706db8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@293a5bf6]" started-at="2025-02-10T22:59:38 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T22:59:54 CST" duration-ms="15995" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@20ce78ec]" started-at="2025-02-25T13:48:41 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-25T13:49:29 CST" duration-ms="48064" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,22 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because the return value of "pageObjects.ProductCatalogPage.getProductByName(String)" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because the return value of "pageObjects.ProductCatalogPage.getProductByName(String)" is null
-at pageObjects.ProductCatalogPage.clickaddProductToCart(ProductCatalogPage.java:50)
-at stepDefinitions.SubmitOrderStepDef.I_add_procut_to_cart(SubmitOrderStepDef.java:67)
-at ✽.I add the product BANARSI SAREE to cart(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:8)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@293a5bf6]" started-at="2025-02-10T22:59:54 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T23:00:27 CST" duration-ms="32541" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:myTestRunner.TestRunner@20ce78ec]" started-at="2025-02-25T13:49:29 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-25T13:50:04 CST" duration-ms="35303" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,22 +50,10 @@ at ✽.I add the product BANARSI SAREE to cart(file:///C:/Users/hemaj/eclipse-wo
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because "del" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "del" is null
-at pageObjects.OrdersPage.clickOnDeleteBtn(OrdersPage.java:26)
-at stepDefinitions.SubmitOrderStepDef.click_delete_btn(SubmitOrderStepDef.java:97)
-at ✽.click on the delete button(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:20)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myTestRunner.TestRunner@293a5bf6]" started-at="2025-02-10T23:00:27 CST" name="tearDownClass" finished-at="2025-02-10T23:00:27 CST" duration-ms="59" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myTestRunner.TestRunner@20ce78ec]" started-at="2025-02-25T13:50:04 CST" name="tearDownClass" finished-at="2025-02-25T13:50:05 CST" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

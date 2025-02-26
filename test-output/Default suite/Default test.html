@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 10 23:41:25 CST 2025</td>
+<td>Started on:</td><td>Tue Feb 25 12:06:50 CST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>52 seconds (52973 ms)</td>
+<tr><td>Total time:</td><td>64 seconds (64697 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,33 +75,81 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='myTestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: myTestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "positive test of submitting the order", "Purchase the order from Ecommerce website"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-etl-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1297, 27). Other element would receive the click: &lt;div _ngcontent-etl-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.127)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4c023559a8a0bfc4f1f8cdd2491fc4a1, clickElement {id=f.151FB4043FD4D763DC1649145BFF9B8A.d.8FBF22B9998E3D84AC00FDF936AEBBCC.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\hemaj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65303}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65303/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4c023559a8a0bfc4f1f8cdd2491fc4a1)] -&gt; xpath: //ul/li[4]/button]
+Session ID: 4c023559a8a0bfc4f1f8cdd2491fc4a1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at pageObjects.ProductCatalogPage.clickCart(ProductCatalogPage.java:64)
+	at stepDefinitions.SubmitOrderStepDef.I_add_procut_to_cart(SubmitOrderStepDef.java:74)
+	at ✽.I add the product ZARA COAT 3 to cart(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace717998169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace717998169'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-etl-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1297, 27). Other element would receive the click: &lt;div _ngcontent-etl-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=133.0.6943.127)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4c023559a8a0bfc4f1f8cdd2491fc4a1, clickElement {id=f.151FB4043FD4D763DC1649145BFF9B8A.d.8FBF22B9998E3D84AC00FDF936AEBBCC.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\hemaj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65303}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65303/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4c023559a8a0bfc4f1f8cdd2491fc4a1)] -&gt; xpath: //ul/li[4]/button]
+Session ID: 4c023559a8a0bfc4f1f8cdd2491fc4a1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at pageObjects.ProductCatalogPage.clickCart(ProductCatalogPage.java:64)
+	at stepDefinitions.SubmitOrderStepDef.I_add_procut_to_cart(SubmitOrderStepDef.java:74)
+	at ✽.I add the product ZARA COAT 3 to cart(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:8)
+</pre></div></td>
+<td>33</td>
+<td>myTestRunner.TestRunner@70325e14</td></tr>
+<tr>
 <td title='myTestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: myTestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to delete the product", "Purchase the order from Ecommerce website"</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;del&quot; is null
 	at pageObjects.OrdersPage.clickOnDeleteBtn(OrdersPage.java:26)
-	at stepDefinitions.SubmitOrderStepDef.click_delete_btn(SubmitOrderStepDef.java:97)
+	at stepDefinitions.SubmitOrderStepDef.click_delete_btn(SubmitOrderStepDef.java:101)
 	at ✽.click on the delete button(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:20)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1920098017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1920098017'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;del&quot; is null
+</pre></div><a href='#' onClick='toggleBox("stack-trace462911221", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace462911221'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;del&quot; is null
 	at pageObjects.OrdersPage.clickOnDeleteBtn(OrdersPage.java:26)
-	at stepDefinitions.SubmitOrderStepDef.click_delete_btn(SubmitOrderStepDef.java:97)
+	at stepDefinitions.SubmitOrderStepDef.click_delete_btn(SubmitOrderStepDef.java:101)
 	at ✽.click on the delete button(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:20)
 </pre></div></td>
-<td>29</td>
-<td>myTestRunner.TestRunner@dd05255</td></tr>
-<tr>
-<td title='myTestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: myTestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "positive test of submitting the order", "Purchase the order from Ecommerce website"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;pageObjects.ProductCatalogPage.getProductByName(String)&quot; is null
-	at pageObjects.ProductCatalogPage.clickaddProductToCart(ProductCatalogPage.java:51)
-	at stepDefinitions.SubmitOrderStepDef.I_add_procut_to_cart(SubmitOrderStepDef.java:67)
-	at ✽.I add the product BANARSI SAREE to cart(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1935689965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1935689965'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because the return value of &quot;pageObjects.ProductCatalogPage.getProductByName(String)&quot; is null
-	at pageObjects.ProductCatalogPage.clickaddProductToCart(ProductCatalogPage.java:51)
-	at stepDefinitions.SubmitOrderStepDef.I_add_procut_to_cart(SubmitOrderStepDef.java:67)
-	at ✽.I add the product BANARSI SAREE to cart(file:///C:/Users/hemaj/eclipse-workspace/CuCumberBDDMaveProject/src/test/java/bddcucumber/SubmitOrder.feature:8)
-</pre></div></td>
-<td>22</td>
-<td>myTestRunner.TestRunner@dd05255</td></tr>
+<td>30</td>
+<td>myTestRunner.TestRunner@70325e14</td></tr>
 </table><p>
 </body>
 </html>
