@@ -74,7 +74,7 @@ public class JunitSubmitOrderStepDef  extends BaseTest{
 
 	}
 	@Then ("verify the confirmation message {string} is diplayed")
-	public void verrify_cinfirmation_message(String string) {
+	public void verrify_cinfirmation_message(String string) throws InterruptedException {
 		String confirmationMsg=confirmationPage.getConfirmationMessage();
 		System.out.println(confirmationMsg);
 		//Assert.assertEquals(confirmationMsg,string);
